@@ -30,7 +30,7 @@
 <meta property="og:description" content="團購團購">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2021-02-17T20:38:14.000Z">
-<meta property="article:modified_time" content="2021-02-17T20:38:14.218Z">
+<meta property="article:modified_time" content="2021-02-17T22:06:30.813Z">
 <meta property="article:author" content="林秋汝(編輯:Johnson HU)">
 <meta name="twitter:card" content="summary">
 
@@ -127,6 +127,11 @@
     <a href="/hexo/about/" rel="section"><i class="fas fa-blog fa-fw"></i>關於</a>
 
   </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/hexo/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/hexo/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
@@ -217,13 +222,6 @@
 
           </div>
           
-    
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -290,8 +288,10 @@
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/hexo/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分類</span>
+        <span class="site-state-item-name">分類</span></a>
       </div>
   </nav>
 </div>
@@ -519,26 +519,6 @@ window.addEventListener('pjax:success', () => {
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
-</script>
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://lushopweb.github.io/hexo/about/index.html";
-    this.page.identifier = "about/index.html";
-    this.page.title = "about";
-    };
-  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
-    if (window.DISQUS) {
-      DISQUS.reset({
-        reload: true,
-        config: disqus_config
-      });
-    } else {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://LUWEBSHOP.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', '' + +new Date());
-      (d.head || d.body).appendChild(s);
-    }
-  });
 </script>
 
     </div>
